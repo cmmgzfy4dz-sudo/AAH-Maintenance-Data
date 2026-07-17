@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AAH Engineering · Maintenance Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Login gate -->
+  <div id="login" class="login-screen">
+    <div class="login-card">
+      <div class="brand">
+        <div class="brand-logo"></div>
+        <div class="brand-name">AAH Engineering</div>
+      </div>
+      <div class="login-title">Sign in</div>
+      <div class="login-sub">Enter the password to access the dashboard.</div>
+      <input id="pw" type="password" placeholder="Password" autocomplete="current-password" />
+      <div id="pw-error" class="login-error" hidden>Incorrect password. Try again.</div>
+      <button id="login-btn" class="login-btn">Sign in</button>
+    </div>
+  </div>
+
+  <!-- App shell -->
+  <div id="app" class="app" hidden>
+    <aside class="sidebar">
+      <div class="brand sidebar-brand">
+        <div class="brand-logo sm"></div>
+        <div class="brand-name sm">AAH Engineering</div>
+      </div>
+      <div class="nav-group">OVERVIEW</div>
+      <div class="navitem" data-nav="dashboard"><span class="dot"></span>Dashboard</div>
+      <div class="navitem" data-nav="wo"><span class="dot"></span>Work Orders</div>
+      <div class="navitem" data-nav="worst"><span class="dot"></span>Worst Asset</div>
+      <div class="navitem" data-nav="pm"><span class="dot"></span>Preventive Maint.</div>
+      <div class="nav-group">ANALYSIS</div>
+      <div class="navitem" data-nav="rel"><span class="dot"></span>Reliability</div>
+      <div class="sidebar-foot">
+        <button id="logout" class="logout">Sign out</button>
+      </div>
+    </aside>
+    <main id="main" class="main"></main>
+  </div>
+
+  <script src="data/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
