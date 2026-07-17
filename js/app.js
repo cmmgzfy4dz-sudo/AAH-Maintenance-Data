@@ -5,7 +5,7 @@
   "use strict";
 
   // ---- Config -------------------------------------------------------------
-  var PASSWORD = "aah2026"; // client-side gate only (matches the design's login screen)
+  var PASSWORD = "Agincourt1415"; // client-side gate only (matches the design's login screen)
   var D = window.APPDATA || {};
 
   // ---- Reference maps (from the source design) ----------------------------
