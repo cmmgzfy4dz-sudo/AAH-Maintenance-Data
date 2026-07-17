@@ -25,6 +25,9 @@ body{
 a{color:var(--accent);text-decoration:none}
 a:hover{color:#63bcff}
 .mono{font-family:'Roboto Mono',ui-monospace,monospace}
+/* Ensure the [hidden] attribute always wins over layout rules like .app{display:flex},
+   so the dashboard is fully hidden (not just scrolled off-screen) until sign-in. */
+[hidden]{display:none !important}
 
 /* Login */
 .login-screen{
